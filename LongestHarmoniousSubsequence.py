@@ -13,6 +13,4 @@ class Solution:
                 lhs = max(lhs, counter[i+1] + counter[i])
         return lhs
 
-# s = Solution()
-# s.findLHS([1,2, 3, 4])
 

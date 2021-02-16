@@ -1,10 +1,9 @@
 def kWeakestRows(matrix, k):
     counter = {}
-    for i in range(len(matrix)):
-        counter[i] = sum(matrix[i])
-    s = sorted(counter.items(), key=lambda x: x[1], reverse=True)
-    print(s, s.keys()[k])
-    return s.keys()[k]
+    for i in range(len(mat)):
+        counter[i] = sum(mat[i])
+    s = sorted(counter, key=counter.get)[:k]
+    return s
 
 
 
